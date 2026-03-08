@@ -1,4 +1,4 @@
-import { BarChart3, Bell, Bus, Building2, Car, FileText, GitBranch, LayoutDashboard, MapPinned, Route, Settings, ShieldUser, Users } from 'lucide-react';
+import { BarChart3, Bell, Bus, Building2, Car, FileText, GitBranch, LayoutDashboard, MapPinned, Route, Settings, Shield, Users } from 'lucide-react';
 import { Role } from '../types';
 
 export const menuItems = [
@@ -12,7 +12,7 @@ export const menuItems = [
   { key: 'requests', label: 'Requests', path: '/requests', icon: FileText, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HOD', 'HR', 'TRANSPORT_AUTHORITY', 'PLANNING'] as Role[] },
   { key: 'groups', label: 'Generated Groups', path: '/groups', icon: GitBranch, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HR', 'TRANSPORT_AUTHORITY', 'PLANNING'] as Role[] },
   { key: 'reports', label: 'Reports', path: '/reports', icon: BarChart3, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HR', 'TRANSPORT_AUTHORITY', 'PLANNING'] as Role[] },
-  { key: 'users', label: 'User Control', path: '/users', icon: ShieldUser, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HR'] as Role[] },
+  { key: 'users', label: 'User Control', path: '/users', icon: Shield, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HR'] as Role[] },
   { key: 'notifications', label: 'Notifications', path: '/notifications', icon: Bell, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HOD', 'HR', 'TRANSPORT_AUTHORITY', 'EMP', 'PLANNING'] as Role[] },
   { key: 'profile', label: 'Profile', path: '/profile', icon: Settings, roles: ['ADMIN', 'SUPER_ADMINISTER', 'HOD', 'HR', 'TRANSPORT_AUTHORITY', 'EMP', 'PLANNING'] as Role[] },
 ];

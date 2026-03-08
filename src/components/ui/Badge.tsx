@@ -15,7 +15,7 @@ const variants: Record<string, string> = {
 export function Badge({ value }: { value: string }) {
   return (
     <span className={cn('inline-flex rounded-full px-2.5 py-1 text-xs font-semibold', variants[value] || 'bg-slate-100 text-slate-700')}>
-      {value.replaceAll('_', ' ')}
+      {value.replace(/_/g, ' ')}
     </span>
   );
 }
